@@ -118,17 +118,17 @@ const Home = () => {
         <div className="h-[50vh] flex flex-col items-center justify-center font-bold text-3xl">
           <div className="bg-neutral-800 border-2 border-white text-white py-8 z-10 relative transform -rotate-12 top-14">
             <InfiniteScroll>
-              <li>creative</li>
-              <li>Non Tech</li>
-              <li>Technical</li>
+              <li>CREATIVE</li>
+              <li>NON TECH</li>
+              <li>TECHNICAL</li>
             </InfiniteScroll>
           </div>
           <div className="bg-white py-10">
             <InfiniteScroll>
-              <li>hackathon </li>
-              <li>workshop </li>
-              <li>internship</li>
-              <li>Projects</li>
+              <li>HACKATHON </li>
+              <li>WORKSHOPS </li>
+              <li>INTERNSHIPS</li>
+              <li>PROJECTS</li>
             </InfiniteScroll>
           </div>
         </div>

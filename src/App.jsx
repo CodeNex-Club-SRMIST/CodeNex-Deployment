@@ -1,22 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Carousel from './components/Carousel'
-import Socials from './components/Socials'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './components/HomePage'
 import Aboutus from './components/Aboutus'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <>
-    <Navbar/>
-    <Home/>
-    <Carousel/>
-    <Aboutus/>
-    <Socials/>
-    <Footer/>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/team" element={<Aboutus />} />
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 

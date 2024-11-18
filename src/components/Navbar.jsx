@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -67,14 +68,14 @@ const Navbar = () => {
             sm:pt-0"
         >
           <li className="sm:mx-4">
-            <a href="#" className="hover:text-cyan-300 text-white">
+            <Link to="/" className="hover:text-cyan-300 text-white">
               HOME
-            </a>
+            </Link>
           </li>
           <li className="sm:mx-4">
-            <a href="#" className="hover:text-cyan-300 text-white">
+            <Link to="/aboutus" className="hover:text-cyan-300 text-white">
               ABOUT
-            </a>
+            </Link>
           </li>
           <li className="sm:mx-4">
             <a href="#" className="hover:text-cyan-300 text-white">
@@ -82,9 +83,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="sm:mx-4">
-            <a href="#" className="hover:text-cyan-300 text-white">
-              SOCIALS
-            </a>
+            <Link to="/team" className="hover:text-cyan-300 text-white">
+              TEAM
+            </Link>
           </li>
           <li className="sm:mx-4">
             <a href="#" className="hover:text-cyan-300 text-white">
