@@ -70,7 +70,25 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-            </footer>
+
+                <div className="flex 
+    half-screen-padding         
+    lg:px-[70px]           
+    mb-6">
+    <a href="#" className="mx-3 text-white hover:text-cyan-400 transition duration-200">
+        <FaInstagram />
+    </a>
+    <a href="#" className="mx-3 text-white hover:text-cyan-400 transition duration-200">
+        <FaTwitter />
+    </a>
+    <a href="#" className="mx-3 text-white hover:text-cyan-400 transition duration-200">
+        <FaLinkedinIn />
+    </a>
+    <a href="#" className="mx-3 text-white hover:text-cyan-400 transition duration-200">
+        <IoLogoWhatsapp />
+    </a>
+</div>
+        </footer>
         </>
     );
 };
