@@ -2,7 +2,6 @@ import React from "react";
 import "./aboutus.css";
 import Parth from "../assets/Parth.png"
 import Shreyansh from "../assets/s.png"
-import C from "../assets/C.png"
 import Ananya from "../assets/Ananya.jpg"
 import Govind from "../assets/Govind-Creatives.jpg"
 import Siah from "../assets/Siah-Creatives.jpg"
