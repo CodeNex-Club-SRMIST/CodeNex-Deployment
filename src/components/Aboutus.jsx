@@ -20,139 +20,135 @@ import Subro from "../assets/Subro.jpg"
 import Navya from "../assets/Navya-web.jpg"
 import Anjany from "../assets/Anjany.jpg"
 
-
 const Aboutus = () => {
   return (
-      <div className="body">
-        <div id="social-icons-container"></div>
-        <div className="container flex flex-col pt-6 items-center md:flex-row md:justify-center md:space-x-8 ">
-          <div className="club-name mt-[200px] ">
-            <h1>odeNex</h1>
-          </div>
+    <div className="body pt-[80px]"> {/* Added padding-top to account for the floating navbar */}
+      <div id="social-icons-container"></div>
+      <div className="container flex flex-col pt-6 items-center md:flex-row md:justify-center md:space-x-8 ">
+        <div className="club-name mt-[200px] ">
+          <h1>odeNex</h1>
+        </div>
 
-          <div className="club-head mt-[100px] ">
-            <div className="profile-card">
-              <img src={Parth} alt="Club Head" />
-              <h2>Parth Nath Chauhan</h2>
-              <p1 className="position">CODENEX FOUNDER</p1>
-              <p>
-                Parth oversees the entire club, coordinating efforts across
-                domains and ensuring a unified vision.
-              </p>
+        <div className="club-head mt-[100px] ">
+          <div className="profile-card">
+            <img src={Parth} alt="Club Head" />
+            <h2>Parth Nath Chauhan</h2>
+            <p1 className="position">CODENEX FOUNDER</p1>
+            <p>
+              Parth oversees the entire club, coordinating efforts across
+              domains and ensuring a unified vision.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section id="team-members"></section>
+      <section id="team-members">
+        <div className="domain-section pt-6" id="domain1">
+          <h2>Secretary</h2>
+          <div className="team-member">
+            <div className="card-inner">
+              <div className="justify-center card-front">
+                <img src={Subro} alt="Shreyansh Arora" />
+                <h3>Subhrodeep Ghosh</h3>
+              </div>
+              <div className="card-back">
+                <div className="social-icons1">
+                  <a
+                    href="https://github.com/username"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/username"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/username"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <section id="team-members"></section>
-        <section id="team-members">
         <div className="domain-section" id="domain1">
-            <h2>Secretary</h2>
-            <div className="team-member">
-              <div className="card-inner">
-                <div className="justify-center card-front">
-                  <img src={Subro} alt="Shreyansh Arora" />
-                  <h3>Subhrodeep Ghosh</h3>
-                </div>
-                <div className="card-back">
-                  <div className="social-icons1">
-                    <a
-                      href="https://github.com/username"
-                      target="_blank"
-                      aria-label="GitHub"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      href="https://linkedin.com/in/username"
-                      target="_blank"
-                      aria-label="LinkedIn"
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                    <a
-                      href="https://instagram.com/username"
-                      target="_blank"
-                      aria-label="Instagram"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                    <p></p>
-                  </div>
+          <h2>Web Development</h2>
+          <div className="team-member">
+            <div className="card-inner">
+              <div className="card-front">
+                <img src={Shreyansh} alt="Shreyansh Arora" />
+                <h3>Shreyansh Arora</h3>
+                <p>Associate Head</p>
+              </div>
+              <div className="card-back">
+                <div className="social-icons1">
+                  <a
+                    href="https://github.com/username"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/username"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/username"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="domain-section" id="domain1">
-            <h2>Web Development</h2>
-            <div className="team-member">
-              <div className="card-inner">
-                <div className="card-front">
-                  <img src={Shreyansh} alt="Shreyansh Arora" />
-                  <h3>Shreyansh Arora</h3>
-                  <p>Associate Head</p>
-                </div>
-                <div className="card-back">
-                  <div className="social-icons1">
-                    <a
-                      href="https://github.com/username"
-                      target="_blank"
-                      aria-label="GitHub"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      href="https://linkedin.com/in/username"
-                      target="_blank"
-                      aria-label="LinkedIn"
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                    <a
-                      href="https://instagram.com/username"
-                      target="_blank"
-                      aria-label="Instagram"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                    <p></p>
-                  </div>
+          <div className="team-member">
+            <div className="card-inner">
+              <div className="card-front">
+                <img src={Navya} alt="Shreyansh Arora" />
+                <h3>Navya</h3>
+                <p>Associate Head</p>
+              </div>
+              <div className="card-back">
+                <div className="social-icons1">
+                  <a
+                    href="https://github.com/username"
+                    target="_blank"
+                    aria-label="GitHub"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/username"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com/username"
+                    target="_blank"
+                    aria-label="Instagram"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="team-member">
-              <div className="card-inner">
-                <div className="card-front">
-                  <img src={Navya} alt="Shreyansh Arora" />
-                  <h3>Navya</h3>
-                  <p>Associate Head</p>
-                </div>
-                <div className="card-back">
-                  <div className="social-icons1">
-                    <a
-                      href="https://github.com/username"
-                      target="_blank"
-                      aria-label="GitHub"
-                    >
-                      <i className="fab fa-github"></i>
-                    </a>
-                    <a
-                      href="https://linkedin.com/in/username"
-                      target="_blank"
-                      aria-label="LinkedIn"
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                    <a
-                      href="https://instagram.com/username"
-                      target="_blank"
-                      aria-label="Instagram"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
             <div className="team-member">
               <div className="card-inner">
                 <div className="card-front">
