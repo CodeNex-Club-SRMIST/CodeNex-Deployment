@@ -130,14 +130,13 @@ const Home = () => {
               </p>
 
 
-            
-              <a href="/team">
+            <Link to="/team">
                 <button className="border-2 border-purple-600 rounded-full p-2 sm:p-3 text-purple-600 hover:border-purple-400 hover:text-purple-400 mt-10">
 
                   MEET THE TEAM
                 </button>
+            </Link>
                 
-              </a>
              
             </div>
             <div className='flex justify-center mt-6 lg:justify-start lg:mt-0'>
