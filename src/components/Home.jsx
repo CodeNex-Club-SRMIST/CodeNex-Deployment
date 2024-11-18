@@ -16,13 +16,9 @@ const Home = () => {
     return (
         <>
             <div className='bg-black'>
-                {/* Container to center all content */}
-                <div className='flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 '>
-                    {/* Left Side Content */}
-                    <div className='pt-20 lg:pt-40 px-4 lg:pl-20 flex flex-col items-center lg:items-start'>
-                        {/* Hidden on mobile, visible on larger screens */}
+                <div className='flex flex-col lg:flex-row items-center justify-center gap-10  lg:gap-20 '>
+                    <div className='pt-20 lg:pt-40 px-4 lg:pl-20 flex flex-col items-center mt-[150px] lg:items-start'>
                         <img src={crn} alt="" className='hidden lg:block absolute -mt-[88px] -ml-16' />
-                        {/* Adjusted wlcm image to left align on larger screens */}
                         <img src={wlcm} alt="" className='w-[300px] md:w-[500px] lg:w-[600px] self-start' />
 
                         {/* Main Logo and Club Logo */}
@@ -46,19 +42,40 @@ const Home = () => {
 
                 {/* Social Media Icons */}
                 <div className='flex justify-center items-center gap-8 pb-16'>
-                    <div className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'>
-                        <GrInstagram size={20} className='text-white hover:text-cyan-300' />
-                    </div>
-                    <div className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'>
-                        <FaTwitter size={20} className='text-white hover:text-cyan-300' />
-                    </div>
-                    <div className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'>
-                        <FaLinkedinIn size={20} className='text-white hover:text-cyan-300' />
-                    </div>
-                    <div className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'>
-                        <IoLogoWhatsapp size={20} className='text-white hover:text-cyan-300' />
-                    </div>
-                </div>
+  <a
+    href='https://www.instagram.com/codenex_srmist'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+  >
+    <GrInstagram size={20} className='text-white hover:text-cyan-300' />
+  </a>
+  <a
+    href='https://x.com/CodeNexClub?t=YuNrpDf1yt_E6nFkK7jyUA&s=09'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+  >
+    <FaTwitter size={20} className='text-white hover:text-cyan-300' />
+  </a>
+  <a
+    href='https://www.linkedin.com/company/code-nex-club-srmist/posts/?feedView=all'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+  >
+    <FaLinkedinIn size={20} className='text-white hover:text-cyan-300' />
+  </a>
+  <a
+    href='https://whatsapp.com/channel/0029VamkMtaEgGfG4qkPDZ3V'
+    target='_blank'
+    rel='noopener noreferrer'
+    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+  >
+    <IoLogoWhatsapp size={20} className='text-white hover:text-cyan-300' />
+  </a>
+</div>
+
 
 
 
