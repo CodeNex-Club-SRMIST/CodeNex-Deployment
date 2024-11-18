@@ -25,7 +25,7 @@ const Aboutus = () => {
   return (
       <div className="body">
         <div id="social-icons-container"></div>
-        <div className="container flex flex-col items-center md:flex-row md:justify-center md:space-x-8 ">
+        <div className="container flex flex-col pt-6 items-center md:flex-row md:justify-center md:space-x-8 ">
           <div className="club-name mt-[200px] ">
             <h1>odeNex</h1>
           </div>
