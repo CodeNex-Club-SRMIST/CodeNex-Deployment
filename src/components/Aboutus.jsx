@@ -9,13 +9,13 @@ import Hirav  from "../assets/Hirav-corporate.jpg"
 import Srijan from "../assets/Srijan-Aiml.jpg"
 import Aadarsh from "../assets/Aadarsh-cyber.jpg"
 import Anhadveer from "../assets/Anhadveer-cyber.jpg"
-import Ashwath from "../assets/Ashwath-Block.jpg"
+import Ashwath from "../assets/Ashwath-block.jpg"
 import Nishanth from "../assets/Nishanth-events.jpg"
 import Subashree from "../assets/subashree-events.jpg"
 import Sushant from "../assets/Sushant.jpg"
 import Bhargav from "../assets/Bharghav-PR.jpg"
 import Anmol from "../assets/Anmol.jpg"
-import Shreyansh from "../assets/Shreyansh.jpg"
+import Shreyansh from "../assets/Shreyansh.jpg" 
 
 const Aboutus = () => {
   return (
