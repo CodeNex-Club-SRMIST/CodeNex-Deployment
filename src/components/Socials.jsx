@@ -55,7 +55,7 @@ const Socials = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className='relative'>
                     <p className="text-white font-semibold text-center mt-72">Want to Collaborate?</p>
 
                    

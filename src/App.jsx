@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Carousel from './components/Carousel'
 import Socials from './components/Socials'
 import Footer from './components/Footer'
+import Aboutus from './components/Aboutus'
 
 const App = () => {
   return (
@@ -12,9 +13,9 @@ const App = () => {
     <Navbar/>
     <Home/>
     <Carousel/>
+    <Aboutus/>
     <Socials/>
     <Footer/>
-    
     </>
   )
 }

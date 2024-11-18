@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <div className='bg-black'>
         <div className='flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20'>
-          <div className='pt-20 lg:pt-40 px-4 lg:pl-20 flex flex-col items-center mt-40 lg:items-start'>
+          <div className='relative pt-20 lg:pt-40 px-4 lg:pl-20 flex flex-col items-center mt-40 lg:items-start'>
             <img src={crn} alt="" className='hidden lg:block absolute -mt-[88px] -ml-16' />
             <img src={wlcm} alt="" className='w-[300px] md:w-[500px] lg:w-[600px] self-start' />
             <div className='flex flex-col items-center lg:flex-row mt-5'>

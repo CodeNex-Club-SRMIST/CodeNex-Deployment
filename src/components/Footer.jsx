@@ -55,13 +55,6 @@ const Footer = () => {
         <IoLogoWhatsapp />
     </a>
 </div>
-
-
-                <div className="border-t border-gray-700  pt-6 text-center">
-                    <p className="text-gray-400">
-                         Made by Sameer.
-                    </p>
-                </div>
             </div>
         </footer>
         </>
