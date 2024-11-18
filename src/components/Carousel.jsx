@@ -1,19 +1,25 @@
-import wrkshp from '../assets/wrkshp.jpg'
-import prty from '../assets/prty.jpg'
-import cdcmp from '../assets/cdcmp.jpg'
-import hck from '../assets/hck.png'
+import React from 'react';
+import teammeet from '../assets/teammeet.jpg';
+import teammeet2 from '../assets/teammeet2.jpg';
+import orientation from '../assets/orientation.jpg';
+import freshermeet from '../assets/freshermeet.jpg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const Carousel = () => {
     const settings = {
-        dots: false,
-        infinite: true,
+        dots: true, 
+        infinite: true, 
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 3, 
+        slidesToScroll: 1, 
+        centerMode: true,
+        focusOnSelect: true,
+        autoplay: true, 
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        cssEase: "linear", 
         responsive: [
             {
                 breakpoint: 1024,
@@ -30,68 +36,57 @@ const Carousel = () => {
                 },
             },
         ],
+        arrows: false, // Remove arrows
     };
 
-  return (
-    <>
-     <div className="bg-black  pt-28 w-full overflow-x-hidden" >
-     <p className="bg-gradient-to-t from-purple-400  to-cyan-300 bg-clip-text text-transparent text-center text-4xl font-bold">
-   EVENTS WE HELD
-</p>
-
-
-                {/* Slider container */}
-                <div className="w-full sm:w-3/4 mx-auto ">
-                    <div className="mt-20">
-                        <Slider {...settings}>
-                            {data.map((d, index) => (
-                                <div
-                                key={index}
-                                className="bg-cyan-100 border-2 border-zinc-700 rounded-2xl h-[290px] w-[280px] flex flex-col justify-center items-center hover:border-cyan-300">
-                                <div className='flex flex-col items-center mt-4'>
-                                    <p className='text-black text-center font-semibold text-xl'>{d.name}</p>
-                                    <p className="text-black text-center">{d.text}</p>
-                                </div>
-                                <div className='flex justify-center items-center '>
-
-                                <img src={d.img} alt="" className='h-[190px] w-[250px] mt-5 rounded-xl' />
-                                </div>
+    return (
+        <div className="bg-black pt-28 w-full overflow-hidden">
+            <p className="bg-gradient-to-t from-purple-400 to-cyan-300 bg-clip-text text-transparent text-center text-4xl font-bold">
+                EVENTS WE HELD
+            </p>
+            <div className="w-full sm:w-3/4 mx-auto mt-20">
+                <Slider {...settings}>
+                    {data.map((d, index) => (
+                        <div
+                            key={index}
+                            className="bg-cyan-100 border-2 border-zinc-700 rounded-2xl h-[320px] w-[290px] flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:border-cyan-300 duration-300 ease-in-out"
+                        >
+                            <div className="flex flex-col items-center mt-4">
+                                <p className="text-black text-center font-semibold text-xl">{d.name}</p>
+                                <p className="text-black text-center text-sm">{d.text}</p>
                             </div>
-                            
-                            ))}
-                        </Slider>
-                    </div>
-                </div>
+                            <div className="flex justify-center items-center mt-5">
+                                <img src={d.img} alt={d.name} className="h-[220px] w-[280px] rounded-xl object-cover" />
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
             </div>
-    
-    
-    </>
-  )
-}
-
+        </div>
+    );
+};
 
 const data = [
     {
-        text: 'Coding Camp',
+        text: 'CodeNex Team meet',
         name: 'Event 1',
-      
-        img: cdcmp
+        img: teammeet
     },
     {
-        text: 'Codenex Hackathon',
+        text: 'Teammeet',
         name: 'Event 2',
-        
-        img: hck
+        img: teammeet2
     },
     {
-        text: "House Party",
+        text: "Orientation",
         name: 'Event 3',
-        img: prty
+        img: orientation
     },
     {
-        text: "Workshop",
+        text: "Freshermeet",
         name: 'Event 4',
-        img: wrkshp
+        img: freshermeet
     }
 ];
-export default Carousel
+
+export default Carousel;
