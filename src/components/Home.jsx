@@ -13,6 +13,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import InfiniteScroll from "./InfiniteScroll";
 import InfiniteHorizontalScroll from "./InfiniteScroll2";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -61,7 +62,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="flex justify-center items-center gap-8 pb-16">
           <a
             href="https://www.instagram.com/codenex_srmist"
@@ -135,17 +135,11 @@ const Home = () => {
                 </button>
               </a>
             </div>
-
-            <div className="flex justify-center lg:justify-start mt-6 lg:mt-0">
-              <img
-                src={aboutteemmeet}
-                alt="aboutteemmeet"
-                className="w-full max-w-[300px] md:max-w-[550px] h-auto"
-              />
+            <div className='flex justify-center mt-6 lg:justify-start lg:mt-0'>
+              <img src={aboutteemmeet} alt="aboutteemmeet" className='w-full max-w-[300px] md:max-w-[550px] h-auto' />
             </div>
           </div>
         </div>
-
         <div className="h-[50vh] flex flex-col items-center justify-center font-bold text-lg lg:text-3xl">
           <div className="bg-neutral-800 border-2 border-white text-white py-4 lg:py-8 z-10 relative transform -rotate-12 top-4 lg:top-14">
             <InfiniteScroll />
