@@ -25,3 +25,54 @@
      /* 50% of the viewport width */
 }
 
+/* General card styling */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 16px 0; /* Add space around each card */
+}
+
+.domain-section .team-member {
+  margin-bottom: 24px; /* Add spacing between team member cards */
+}
+
+/* Media query for smaller screens (e.g., 320px wide) */
+@media (max-width: 320px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 16px; /* Add padding for better spacing */
+  }
+
+  .club-name {
+    margin-top: 100px; /* Adjust top margin for better spacing */
+    text-align: center;
+  }
+
+  .club-head {
+    margin-top: 16px; /* Reduce top margin for Parth's card */
+    width: 90%; /* Ensure it fits within the screen */
+  }
+
+  .domain-section {
+    padding: 0 16px; /* Add padding for domains */
+  }
+
+  .team-member .card-inner {
+    display: flex;
+    flex-direction: column; /* Ensure content stacks */
+    align-items: center;
+  }
+
+  .card-front img {
+    width: 80%; /* Scale down images */
+    height: auto;
+  }
+
+  .social-icons1 {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Add spacing between social icons */
+  }
+}

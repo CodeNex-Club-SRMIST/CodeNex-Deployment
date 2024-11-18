@@ -19,28 +19,27 @@ import Shreyansh from "../assets/Shreyansh.jpg"
 import Subro from "../assets/Subro.jpg"
 import Navya from "../assets/Navya-web.jpg"
 import Anjany from "../assets/Anjany.jpg"
+import '../index.css';
 
 const Aboutus = () => {
   return (
+    
     <div className="body pt-[80px]"> {/* Added padding-top to account for the floating navbar */}
       <div id="social-icons-container"></div>
-      <div className="container flex flex-col pt-6 items-center md:flex-row md:justify-center md:space-x-8 ">
-        <div className="club-name mt-[200px] ">
-          <h1>odeNex</h1>
-        </div>
+      <div className="container flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:justify-center md:space-x-8">
+  <div className="club-name mt-[100px] text-center">
+    <h1>odeNex</h1>
+  </div>
 
-        <div className="club-head mt-[100px] ">
-          <div className="profile-card">
-            <img src={Parth} alt="Club Head" />
-            <h2>Parth Nath Chauhan</h2>
-            <p1 className="position">CODENEX FOUNDER</p1>
-            <p>
-              Parth oversees the entire club, coordinating efforts across
-              domains and ensuring a unified vision.
-            </p>
-          </div>
-        </div>
-      </div>
+  <div className="club-head mt-4 w-full md:mt-[100px] md:w-auto">
+    <div className="profile-card">
+      <img src={Parth} alt="Club Head" />
+      <h2>Parth Nath Chauhan</h2>
+      <p1 className="position">CODENEX FOUNDER</p1>
+      <p>Parth oversees the entire club, coordinating efforts across domains and ensuring a unified vision.</p>
+    </div>
+  </div>
+</div>
       <section id="team-members"></section>
       <section id="team-members">
         <div className="domain-section pt-6" id="domain1">
