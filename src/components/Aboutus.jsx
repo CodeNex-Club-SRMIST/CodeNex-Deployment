@@ -10,7 +10,7 @@ const Aboutus = () => {
         <div id="social-icons-container"></div>
         <div className="container">
           <div className="club-name">
-            <h1>Codenex</h1>
+            <h1>odenex</h1>
           </div>
 
           <div className="club-head">
