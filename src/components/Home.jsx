@@ -113,7 +113,7 @@ const Home = () => {
           <div className="flex flex-col xl:flex-row items-center justify-between pb-10">
             <div className="flex-1 text-center lg:text-left p-8">
               <p className="text-white font-semibold text-xl md:text-xl lg:text-xl w-full mt-0">
-                Codenex is a dynamic and innovative student club established to
+                CodeNex is a dynamic and innovative student club established to
                 promote technical excellence and collaborative learning in the
                 field of computer science. Founded by Parth Nath Chauhan, the
                 club operates under the guidance of its esteemed faculty
@@ -121,7 +121,7 @@ const Home = () => {
                 instrumental in its growth.
               </p>
               <p className="text-white font-semibold text-xl md:text-xl lg:text-xl w-full mt-12">
-                Codenex functions under the Network and Communications
+                CodeNex functions under the Network and Communications
                 Department, a hub for technological advancements and research,
                 led by the dedicated Head of Department, M. Laxmi. The club’s
                 primary objective is to provide students with a platform to
