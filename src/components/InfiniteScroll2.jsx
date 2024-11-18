@@ -1,6 +1,6 @@
 import React from "react";
 // Horizontal scroll items
-const items = ["CREATIVE", "NON TECH", "TECHNICAL"];
+const items = ["HACKATHON ", "WORKSHOPS ", "INTERNSHIPS", "PROJECTS"];
 
 const InfiniteHorizontalScroll = () => {
   // Repeat items to simulate infinite scrolling

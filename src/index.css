@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes infinite-horizontal-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+.animated-scroll {
+  display: flex;
+  animation: infinite-horizontal-scroll 15s linear infinite;
+}
+
 .slick-slide > div{
     margin: 0 10px;
   }
