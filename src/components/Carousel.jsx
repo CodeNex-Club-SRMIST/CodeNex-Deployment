@@ -52,7 +52,7 @@ const Carousel = () => {
                             className="bg-cyan-100 border-2 border-zinc-700 rounded-2xl h-[320px] w-[290px] flex flex-col justify-center items-center transition-transform transform hover:scale-105 hover:border-cyan-300 duration-300 ease-in-out"
                         >
                             <div className="flex flex-col items-center mt-4">
-                                <p className="text-black text-center font-semibold text-xl">{d.name}</p>
+                                <p className="text-black text-center font-semibold text-2xl">{d.name}</p>
                                 <p className="text-black text-center text-sm">{d.text}</p>
                             </div>
                             <div className="flex justify-center items-center mt-5">
@@ -69,22 +69,18 @@ const Carousel = () => {
 const data = [
     {
         text: 'CodeNex Team meet',
-        name: 'Event 1',
         img: teammeet
     },
     {
         text: 'Teammeet',
-        name: 'Event 2',
         img: teammeet2
     },
     {
         text: "Orientation",
-        name: 'Event 3',
         img: orientation
     },
     {
         text: "Freshermeet",
-        name: 'Event 4',
         img: freshermeet
     }
 ];

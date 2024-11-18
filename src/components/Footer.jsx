@@ -18,7 +18,7 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <a 
-                                            href="https://takeuforward.org/about-us" 
+                                            href="" 
                                             className="text-lg hover:text-cyan-400 transition duration-200 hover:underline"
                                         >
                                             SRMIST KTR
@@ -26,18 +26,10 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <a 
-                                            href="https://takeuforward.org/contact-us" 
+                                            href="" 
                                             className="text-lg hover:text-cyan-400 transition duration-200 hover:underline"
                                         >
                                             codenex.club@srmist.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a 
-                                            href="https://takeuforward.org/plus" 
-                                            className="text-lg hover:text-cyan-400 transition duration-200 hover:underline"
-                                        >
-                                            +91-0000000000
                                         </a>
                                     </li>
                                 </ul>
@@ -47,25 +39,25 @@ const Footer = () => {
 
                     <div className="flex justify-center mb-6">
                         <a 
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/codenex_srmist"
                             className="mx-4 text-white hover:text-cyan-400 transition duration-200 transform hover:scale-110"
                         >
                             <FaInstagram size={24} />
                         </a>
                         <a 
-                            href="https://twitter.com"
+                            href="https://x.com/CodeNexClub?t=YuNrpDf1yt_E6nFkK7jyUA&s=09"
                             className="mx-4 text-white hover:text-cyan-400 transition duration-200 transform hover:scale-110"
                         >
                             <FaTwitter size={24} />
                         </a>
                         <a 
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/company/code-nex-club-srmist/posts/?feedView=all"
                             className="mx-4 text-white hover:text-cyan-400 transition duration-200 transform hover:scale-110"
                         >
                             <FaLinkedinIn size={24} />
                         </a>
                         <a 
-                            href="https://wa.me"
+                            href="https://whatsapp.com/channel/0029VamkMtaEgGfG4qkPDZ3V"
                             className="mx-4 text-white hover:text-cyan-400 transition duration-200 transform hover:scale-110"
                         >
                             <IoLogoWhatsapp size={24} />

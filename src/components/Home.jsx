@@ -4,7 +4,7 @@ import wlcm from '../assets/wlcm.png';
 import img from '../assets/img.png';
 import clb from '../assets/clb.png';
 import crn from '../assets/crn.png';
-import logo from '../assets/logo.png';
+import aboutteemmeet from '../assets/aboutteemmeet.jpg'
 import t1 from '../assets/t1.png';
 import t2 from '../assets/t2.png';
 import { GrInstagram } from "react-icons/gr";
@@ -83,7 +83,7 @@ const Home = () => {
             target='_blank'
             rel='noopener noreferrer'
             className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
-          >
+          > 
             <IoLogoWhatsapp size={20} className='text-white hover:text-cyan-300' />
           </a>
         </div>
@@ -110,7 +110,7 @@ const Home = () => {
             </div>
 
             <div className='flex justify-center lg:justify-start mt-6 lg:mt-0'>
-              <img src={logo} alt="Logo" className='w-full max-w-[300px] md:max-w-[400px] h-auto' />
+              <img src={aboutteemmeet} alt="aboutteemmeet" className='w-full max-w-[300px] md:max-w-[550px] h-auto' />
             </div>
           </div>
         </div>
