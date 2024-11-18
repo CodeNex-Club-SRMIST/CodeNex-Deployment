@@ -103,12 +103,14 @@ const Home = () => {
               <p className='w-full mt-12 text-xl font-semibold text-white md:text-xl lg:text-xl'>
                 Codenex functions under the Network and Communications Department, a hub for technological advancements and research, led by the dedicated Head of Department, M. Laxmi. The club’s primary objective is to provide students with a platform to enhance their technical skills, engage in cutting-edge projects, and prepare for real-world challenges in the tech industry.
               </p>
-
-              <a href="/team">
-                <button className='p-2 mt-10 text-purple-600 border-2 border-purple-600 rounded-full sm:p-3 hover:border-purple-400 hover:text-purple-400'>
+<Link>
+              <a   path="/team">
+                <button  path="/team" className='p-2 mt-10 text-purple-600 border-2 border-purple-600 rounded-full sm:p-3 hover:border-purple-400 hover:text-purple-400'>
                   MEET THE TEAM
                 </button>
+                
               </a>
+              </Link>
             </div>
 
             <div className='flex justify-center mt-6 lg:justify-start lg:mt-0'>
