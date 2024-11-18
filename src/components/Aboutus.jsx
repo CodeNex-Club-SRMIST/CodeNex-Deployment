@@ -15,7 +15,7 @@ import Subashree from "../assets/subashree-events.jpg"
 import Sushant from "../assets/Sushant.jpg"
 import Bhargav from "../assets/Bharghav-PR.jpg"
 import Anmol from "../assets/Anmol.jpg"
-import Shreyansh from "../assets/Shreyansh.jpg"
+import Shreyansh from "../assets/Shreyansh.jpg" 
 
 const Aboutus = () => {
   return (
