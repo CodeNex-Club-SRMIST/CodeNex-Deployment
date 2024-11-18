@@ -16,17 +16,21 @@ import Sushant from "../assets/Sushant.jpg"
 import Bhargav from "../assets/Bharghav-PR.jpg"
 import Anmol from "../assets/Anmol.jpg"
 import Shreyansh from "../assets/Shreyansh.jpg" 
+import Subro from "../assets/Subro.jpg"
+import Navya from "../assets/Navya-web.jpg"
+import Anjany from "../assets/Anjany.jpg"
+
 
 const Aboutus = () => {
   return (
       <div className="body">
         <div id="social-icons-container"></div>
-        <div className="container">
-          <div className="club-name">
+        <div className="container flex flex-col items-center md:flex-row md:justify-center md:space-x-8 ">
+          <div className="club-name mt-[200px] ">
             <h1>odenex</h1>
           </div>
 
-          <div className="club-head">
+          <div className="club-head mt-[100px] ">
             <div className="profile-card">
               <img src={Parth} alt="Club Head" />
               <h2>Parth Nath Chauhan</h2>
@@ -40,6 +44,43 @@ const Aboutus = () => {
         </div>
         <section id="team-members"></section>
         <section id="team-members">
+        <div className="domain-section" id="domain1">
+            <h2>Secretary</h2>
+            <div className="team-member">
+              <div className="card-inner">
+                <div className="card-front justify-center">
+                  <img src={Subro} alt="Shreyansh Arora" />
+                  <h3>Subhro deep Ghosh</h3>
+                </div>
+                <div className="card-back">
+                  <div className="social-icons1">
+                    <a
+                      href="https://github.com/username"
+                      target="_blank"
+                      aria-label="GitHub"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/username"
+                      target="_blank"
+                      aria-label="LinkedIn"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/username"
+                      target="_blank"
+                      aria-label="Instagram"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="domain-section" id="domain1">
             <h2>Web Development</h2>
             <div className="team-member">
@@ -48,6 +89,41 @@ const Aboutus = () => {
                   <img src={Shreyansh} alt="Shreyansh Arora" />
                   <h3>Shreyansh Arora</h3>
                   <p>Associate HEAD</p>
+                </div>
+                <div className="card-back">
+                  <div className="social-icons1">
+                    <a
+                      href="https://github.com/username"
+                      target="_blank"
+                      aria-label="GitHub"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/username"
+                      target="_blank"
+                      aria-label="LinkedIn"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/username"
+                      target="_blank"
+                      aria-label="Instagram"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="team-member">
+              <div className="card-inner">
+                <div className="card-front">
+                  <img src={Navya} alt="Shreyansh Arora" />
+                  <h3>Navya</h3>
+                  <p>Associative HEAD</p>
                 </div>
                 <div className="card-back">
                   <div className="social-icons1">
@@ -267,6 +343,40 @@ const Aboutus = () => {
                   <img src={Srijan} alt="David Brown" />
                   <h3>Srijan Sarkar</h3>
                   <p>Associate HEAD</p>
+                </div>
+                <div className="card-back">
+                  <div className="social-icons1">
+                    <a
+                      href="https://github.com/username"
+                      target="_blank"
+                      aria-label="GitHub"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/username"
+                      target="_blank"
+                      aria-label="LinkedIn"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://instagram.com/username"
+                      target="_blank"
+                      aria-label="Instagram"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="team-member">
+              <div className="card-inner">
+                <div className="card-front">
+                  <img src={Anjany} alt="David Brown" />
+                  <h3>Anjany Kumar Jaiswal</h3>
+                  <p>Associative HEAD</p>
                 </div>
                 <div className="card-back">
                   <div className="social-icons1">
