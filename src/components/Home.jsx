@@ -11,6 +11,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import InfiniteScroll from './InfiniteScroll';
 
 const Home = () => {
   return (
@@ -114,9 +115,22 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='pb-[150px] lg:pb-[420px] md:pb-[250px]'>
-          <img src={t1} alt="" className='absolute w-[100%] mt-[55px] sm:mt-12 md:mt-28 lg:mt-60' />
-          <img src={t2} alt="" className='absolute w-[100%]' />
+        <div className="h-[50vh] flex flex-col items-center justify-center font-bold text-3xl">
+          <div className="bg-neutral-800 border-2 border-white text-white py-8 z-10 relative transform -rotate-12 top-14">
+            <InfiniteScroll>
+              <li>creative</li>
+              <li>Non Tech</li>
+              <li>Technical</li>
+            </InfiniteScroll>
+          </div>
+          <div className="bg-white py-10">
+            <InfiniteScroll>
+              <li>hackathon </li>
+              <li>workshop </li>
+              <li>internship</li>
+              <li>Projects</li>
+            </InfiniteScroll>
+          </div>
         </div>
       </div>
     </>
