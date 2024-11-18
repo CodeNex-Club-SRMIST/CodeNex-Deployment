@@ -35,6 +35,7 @@ const Navbar = () => {
         shadow-xl
         max-sm:rounded-3xl
         z-50
+        shadow-teal-800
       "
     >
       {/* Logo Section */}
