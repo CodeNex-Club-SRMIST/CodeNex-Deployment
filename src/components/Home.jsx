@@ -16,17 +16,25 @@ const Home = () => {
     return (
         <>
             <div className='bg-black'>
-                <div className='flex flex-col lg:flex-row items-center justify-center gap-10  lg:gap-20 '>
-                    <div className='pt-20 lg:pt-40 px-4 lg:pl-20 flex flex-col items-center mt-[150px] lg:items-start'>
+                <div className='flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 '>
+                    <div className='pt-20 lg:pt-40 px-4 lg:pl-20 flex flex-col items-center mt-40 lg:items-start'>
                         <img src={crn} alt="" className='hidden lg:block absolute -mt-[88px] -ml-16' />
                         <img src={wlcm} alt="" className='w-[300px] md:w-[500px] lg:w-[600px] self-start' />
-
-                        {/* Main Logo and Club Logo */}
                         <div className='flex flex-col items-center lg:flex-row mt-5'>
-                            {/* Adjusted lg2 image for mobile */}
-                            <img src={lg2} alt="" className='w-[250px] md:w-[400px] lg:w-[550px] h-auto max-h-[100px] md:max-h-[125px] mb-4 lg:mb-0' />
-                            {/* Adjusted clb image for mobile */}
-                            <img src={clb} alt="" className='w-[150px] md:w-[220px] lg:w-[270px] h-auto max-h-[60px] md:max-h-[90px] mt-2 lg:mt-5' />
+                            <div className='group'>
+                                <img 
+                                    src={lg2} 
+                                    alt="" 
+                                    className='w-[250px] md:w-[400px] lg:w-[550px] h-auto max-h-[100px] md:max-h-[125px] mb-4 lg:mb-0 transition-transform duration-300 transform group-hover:rotate-6' 
+                                />
+                            </div>
+                            <div className='group'>
+                                <img 
+                                    src={clb} 
+                                    alt="" 
+                                    className='w-[150px] md:w-[220px] lg:w-[270px] h-auto max-h-[60px] md:max-h-[90px] mt-2 lg:mt-5 transition-transform duration-300 transform group-hover:rotate-6' 
+                                />
+                            </div>
                         </div>
 
                         <p className='text-white text-xl pb-24 md:text-3xl lg:text-4xl font-semibold p-5 ml-2 text-center lg:text-left'>
@@ -34,57 +42,58 @@ const Home = () => {
                         </p>
                     </div>
 
-                    {/* Image on the right, hidden on mobile */}
                     <div className='hidden lg:block'>
-                        <img src={img} alt="" className='w-[250px] md:w-[350px] lg:w-[400px]' />
+                        <div className='group'>
+                            <img 
+                                src={img} 
+                                alt="" 
+                                className='w-[250px] md:w-[350px] lg:w-[400px] transition-transform duration-300 transform group-hover:rotate-6' 
+                            />
+                        </div>
                     </div>
                 </div>
 
-                {/* Social Media Icons */}
+                {/* Social Media Links Section */}
                 <div className='flex justify-center items-center gap-8 pb-16'>
-  <a
-    href='https://www.instagram.com/codenex_srmist'
-    target='_blank'
-    rel='noopener noreferrer'
-    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
-  >
-    <GrInstagram size={20} className='text-white hover:text-cyan-300' />
-  </a>
-  <a
-    href='https://x.com/CodeNexClub?t=YuNrpDf1yt_E6nFkK7jyUA&s=09'
-    target='_blank'
-    rel='noopener noreferrer'
-    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
-  >
-    <FaTwitter size={20} className='text-white hover:text-cyan-300' />
-  </a>
-  <a
-    href='https://www.linkedin.com/company/code-nex-club-srmist/posts/?feedView=all'
-    target='_blank'
-    rel='noopener noreferrer'
-    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
-  >
-    <FaLinkedinIn size={20} className='text-white hover:text-cyan-300' />
-  </a>
-  <a
-    href='https://whatsapp.com/channel/0029VamkMtaEgGfG4qkPDZ3V'
-    target='_blank'
-    rel='noopener noreferrer'
-    className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
-  >
-    <IoLogoWhatsapp size={20} className='text-white hover:text-cyan-300' />
-  </a>
-</div>
-
-
-
+                    <a
+                        href='https://www.instagram.com/codenex_srmist'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+                    >
+                        <GrInstagram size={20} className='text-white hover:text-cyan-300' />
+                    </a>
+                    <a
+                        href='https://x.com/CodeNexClub?t=YuNrpDf1yt_E6nFkK7jyUA&s=09'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+                    >
+                        <FaTwitter size={20} className='text-white hover:text-cyan-300' />
+                    </a>
+                    <a
+                        href='https://www.linkedin.com/company/code-nex-club-srmist/posts/?feedView=all'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+                    >
+                        <FaLinkedinIn size={20} className='text-white hover:text-cyan-300' />
+                    </a>
+                    <a
+                        href='https://whatsapp.com/channel/0029VamkMtaEgGfG4qkPDZ3V'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='border-2 rounded-full p-3 hover:border-cyan-300 flex items-center justify-center transition-colors duration-200'
+                    >
+                        <IoLogoWhatsapp size={20} className='text-white hover:text-cyan-300' />
+                    </a>
+                </div>
 
                 <div className='px-6 sm:px-12 md:px-24'>
                     <div>
                         <p className='text-xl text-white mt-16'>ABOUT US</p>
                     </div>
 
-                    {/* Flex row on larger screens, column on medium screens (iPad) */}
                     <div className='flex flex-col md:flex-col lg:flex-row pb-10'>
                         <div className='flex-1'>
                             <p className='text-white font-semibold text-2xl md:text-3xl w-full mt-16'>
@@ -101,38 +110,16 @@ const Home = () => {
                             </a>
                         </div>
 
-                        {/* Stack the image below the text for medium screens (iPads) */}
                         <div className='flex justify-center md:pt-10 mt-6 lg:mt-0 lg:ml-[200px]'>
                             <img src={logo} alt="Logo" className='w-full max-w-[300px] md:max-w-[400px] h-auto' />
                         </div>
                     </div>
-
-                    
                 </div>
-
+                
                 <div className='pb-[150px] lg:pb-[420px] md:pb-[250px]'>
-    {/* t1 image with different margin-top for mobile, iPhone 12 Pro, and iPad */}
-    <img src={t1} alt="" className='absolute w-[100%] mt-[55px] sm:mt-12 md:mt-28 lg:mt-60' />
-
-    {/* t2 image, keeping it relative to t1 */}
-    <img src={t2} alt="" className='absolute w-[100%]' />
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                   <img src={t1} alt="" className='absolute w-[100%] mt-[55px] sm:mt-12 md:mt-28 lg:mt-60' />
+                   <img src={t2} alt="" className='absolute w-[100%]' />
+                </div> 
             </div>
         </>
     );
