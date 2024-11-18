@@ -1,53 +1,99 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import React, { useState } from "react";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
-  // State to toggle mobile menu visibility
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  // Function to toggle mobile menu
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMenu = () => {
+    setIsMenuVisible((prevState) => !prevState);
   };
 
   return (
-    <>
-      {/* Navbar Container */}
-      <div className='bg-black text-white font-semibold flex items-center justify-between px-6 py-4 sticky top-0 z-50'>
-        {/* Logo */}
-        <div className='flex items-center'>
-          <img src={logo} alt="Logo" className='w-12' />
-        </div>
-
-        {/* Navigation Links for larger screens */}
-        <nav className='hidden md:flex items-center gap-8'>
-          <a href="#" className='hover:text-cyan-300'>HOME</a>
-          <a href="#" className='hover:text-cyan-300'>ABOUT</a>
-          <a href="#" className='hover:text-cyan-300'>EVENTS</a>
-          <a href="#" className='hover:text-cyan-300'>SOCIALS</a>
-          <a href="#" className='hover:text-cyan-300'>CONTACT</a>
-        </nav>
-
-        {/* Hamburger Icon for mobile screens */}
-        <div className='md:hidden'>
-          <button onClick={toggleMobileMenu} className='text-white'>
-            ☰
-          </button>
-        </div>
+    <nav
+      className="
+        border-remd:rounded-full
+        sm:rounded-full
+        flex flex-wrap
+        items-center
+        justify-between
+        fixed
+        top-0
+        left-0
+        right-0
+        py-2
+        md:px-4 py-4
+        px-2
+        text-lg text-gray-700
+        bg-black
+        md:m-8
+        md:mx-14
+        m-4
+        mx-4
+        border-solid
+        border-2
+        border-white
+        shadow-xl
+        max-sm:rounded-3xl
+        z-50
+        shadow-teal-900
+      "
+    >
+      {/* Logo Section */}
+      <div className="flex items-center">
+        <img src={logo} alt="Logo" className="w-12" />
       </div>
 
-      {/* Mobile Dropdown Menu */}
-      {isMobileMenuOpen && (
-        <div className='md:hidden flex flex-col items-center bg-black text-white'>
-          <a href="#" className='py-2 hover:text-cyan-300'>HOME</a>
-          <a href="#" className='py-2 hover:text-cyan-300'>ABOUT US</a>
-          <a href="#" className='py-2 hover:text-cyan-300'>EVENTS</a>
-          <a href="#" className='py-2 hover:text-cyan-300'>SOCIALS</a>
-          <a href="#" className='py-2 hover:text-cyan-300'>CONTACT</a>
-        </div>
-      )}
-    </>
+      {/* Hamburger Icon for Mobile */}
+      <div className="sm:hidden">
+        <button onClick={toggleMenu} className="text-white">
+          ☰
+        </button>
+      </div>
+
+      {/* Navigation Menu */}
+      <div
+        id="menu"
+        className={`menu ${
+          isMenuVisible ? "" : "hidden"
+        } w-full sm:flex sm:items-center sm:w-auto`}
+      >
+        <ul
+          className="
+            pt-4
+            text-base
+            text-gray-950
+            sm:flex
+            sm:justify-between 
+            sm:pt-0"
+        >
+          <li className="sm:mx-4">
+            <a href="#" className="hover:text-cyan-300 text-white">
+              HOME
+            </a>
+          </li>
+          <li className="sm:mx-4">
+            <a href="#" className="hover:text-cyan-300 text-white">
+              ABOUT
+            </a>
+          </li>
+          <li className="sm:mx-4">
+            <a href="#" className="hover:text-cyan-300 text-white">
+              EVENTS
+            </a>
+          </li>
+          <li className="sm:mx-4">
+            <a href="#" className="hover:text-cyan-300 text-white">
+              SOCIALS
+            </a>
+          </li>
+          <li className="sm:mx-4">
+            <a href="#" className="hover:text-cyan-300 text-white">
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
