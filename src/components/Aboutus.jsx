@@ -21,13 +21,14 @@ import Navya from "../assets/Navya-web.jpg"
 import Anjany from "../assets/Anjany.jpg"
 
 
+
 const Aboutus = () => {
   return (
       <div className="body">
         <div id="social-icons-container"></div>
         <div className="container flex flex-col items-center md:flex-row md:justify-center md:space-x-8 ">
           <div className="club-name mt-[200px] ">
-            <h1>odenex</h1>
+            <h1>odeNex</h1>
           </div>
 
           <div className="club-head mt-[100px] ">
@@ -48,7 +49,7 @@ const Aboutus = () => {
             <h2>Secretary</h2>
             <div className="team-member">
               <div className="card-inner">
-                <div className="card-front justify-center">
+                <div className="justify-center card-front">
                   <img src={Subro} alt="Shreyansh Arora" />
                   <h3>Subhro deep Ghosh</h3>
                 </div>
