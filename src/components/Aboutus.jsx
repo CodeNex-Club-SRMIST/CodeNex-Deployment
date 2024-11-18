@@ -44,7 +44,7 @@ const Aboutus = () => {
         </div>
         <section id="team-members"></section>
         <section id="team-members">
-        <div className="domain-section" id="domain1">
+        <div className="domain-section pt-6" id="domain1">
             <h2>Secretary</h2>
             <div className="team-member">
               <div className="card-inner">
