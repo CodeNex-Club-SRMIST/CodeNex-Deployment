@@ -129,11 +129,19 @@ const Home = () => {
                 and prepare for real-world challenges in the tech industry.
               </p>
 
-              <a href="#">
+
+              <a href="/team">
+                <button  path="/team" className='p-2 mt-10 text-purple-600 border-2 border-purple-600 rounded-full sm:p-3 hover:border-purple-400 hover:text-purple-400'>
+
+
+              <a href="/team">
                 <button className="border-2 border-purple-600 rounded-full p-2 sm:p-3 text-purple-600 hover:border-purple-400 hover:text-purple-400 mt-10">
+
                   MEET THE TEAM
                 </button>
+                
               </a>
+             
             </div>
             <div className='flex justify-center mt-6 lg:justify-start lg:mt-0'>
               <img src={aboutteemmeet} alt="aboutteemmeet" className='w-full max-w-[300px] md:max-w-[550px] h-auto' />
