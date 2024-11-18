@@ -1,7 +1,6 @@
 import React from "react";
 import "./aboutus.css";
 import Parth from "../assets/Parth.png"
-import Shreyansh from "../assets/s.png"
 import Ananya from "../assets/Ananya.jpg"
 import Govind from "../assets/Govind-Creatives.jpg"
 import Siah from "../assets/Siah-Creatives.jpg"
@@ -16,7 +15,7 @@ import Subashree from "../assets/subashree-events.jpg"
 import Sushant from "../assets/Sushant.jpg"
 import Bhargav from "../assets/Bharghav-PR.jpg"
 import Anmol from "../assets/Anmol.jpg"
-
+import Shreyansh from "../assets/Shreyansh.jpg"
 
 const Aboutus = () => {
   return (
