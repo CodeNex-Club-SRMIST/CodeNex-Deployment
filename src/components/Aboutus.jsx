@@ -555,14 +555,14 @@ const Aboutus = () => {
                 <div className="card-back">
                   <div className="social-icons1">
                     <a
-                      href="https://github.com/username"
+                      href="https://github.com/parth26nath"
                       target="_blank"
                       aria-label="GitHub"
                     >
                       <i className="fab fa-github"></i>
                     </a>
                     <a
-                      href="https://linkedin.com/in/username"
+                      href="https://www.linkedin.com/in/parth26nath/"
                       target="_blank"
                       aria-label="LinkedIn"
                     >
