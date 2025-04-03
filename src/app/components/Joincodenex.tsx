@@ -15,7 +15,7 @@ export default function Joincodenex() {
 
     if (!email.trim()) return; // Prevent empty submission
 
-    const mailtoLink = `mailto:contact@codenex.com?subject=Join%20CodeNex%20Waitlist&body=Hello,%0A%0AI would like to join CodeNex. Here is my email: ${email}`;
+    const mailtoLink = `mailto:connect.codenex@gmail.com?subject=Join%20CodeNex%20Waitlist&body=Hello,%0A%0AI would like to join CodeNex. Here is my email: ${email}`;
     window.location.href = mailtoLink;
   };
 
@@ -30,10 +30,10 @@ export default function Joincodenex() {
             Stay connected with CodeNex! For inquiries, collaborations, or
             joining our community, reach out to us at{" "}
             <a
-              href="mailto:contact@codenex.com"
+              href="mailto:connect.codenex@gmail.com"
               className="text-blue-600 underline"
             >
-              contact@codenex.com
+              connect.codenex@gmail.com
             </a>
             . We&apos;re here to innovate together!
           </p>
